@@ -62,18 +62,6 @@ CREATE TABLE `employe` (
 -- Déchargement des données de la table `employe`
 --
 
-INSERT INTO `employe` (`id`, `nom`, `prenom`, `email`, `motpasse`, `statut`) VALUES
-(12, 'Rasamoelina', 'Honoré', 'honore.rasamoelina@yahoo.com', 'honore', 1),
-(13, 'Poupard', 'Diane', 'diane.poupard@yahoo.com', 'diane', 0),
-(14, 'De Giovanni', 'Ségolène', 'segolene.degiovanni@yahoo.com', 'segolene', 0),
-(15, 'Gibert', 'Stéphanie', 'stephanie.gibert@yahoo.com', 'stephanie', 0),
-(16, 'De Andrade', 'Aurélia', 'aurelia.deandrade@yahoo.com', 'aurelia', 0),
-(17, 'Challouet', 'Marie', 'marie.challouet@yahoo.com', 'marie', 0),
-(18, 'Allain', 'Nathalie', 'nathalie.allain@yahoo.com', 'nathalie', 0),
-(19, 'Attia', 'Sabera', 'sabera.attia@yahoo.com', 'sabera', 0),
-(22, 'Faria', 'Stéphanie', 'stephanie.faria@yahoo.com', 'stephanie', 0),
-(25, 'Baranger', 'Audrey', 'audrey.baranger@yahoo.com', 'audrey', 0),
-(26, 'Fontaine', 'Sandra', 'sandra.fontaine@yahoo.com', 'sandra', 0);
 
 -- --------------------------------------------------------
 
@@ -90,12 +78,6 @@ CREATE TABLE `formation` (
 -- Déchargement des données de la table `formation`
 --
 
-INSERT INTO `formation` (`id`, `intitule`) VALUES
-(20, 'Formation de PHP'),
-(21, 'Formation de SQL'),
-(22, 'Formation de Java J2EE'),
-(26, 'Formation de Merise'),
-(29, 'Formation de contrôleur programmeur');
 
 -- --------------------------------------------------------
 
@@ -112,10 +94,6 @@ CREATE TABLE `inscrire` (
 -- Déchargement des données de la table `inscrire`
 --
 
-INSERT INTO `inscrire` (`employe_id`, `session_id`) VALUES
-(12, 1),
-(12, 3),
-(13, 1);
 
 -- --------------------------------------------------------
 
@@ -132,11 +110,6 @@ CREATE TABLE `intervenant` (
 -- Déchargement des données de la table `intervenant`
 --
 
-INSERT INTO `intervenant` (`id`, `nom`) VALUES
-(1, 'Guy Martin'),
-(2, 'Philippe Vignard'),
-(3, 'Jean-François Poivey'),
-(8, 'Honoré Rasamoelina');
 
 -- --------------------------------------------------------
 
@@ -153,13 +126,6 @@ CREATE TABLE `prestataire` (
 -- Déchargement des données de la table `prestataire`
 --
 
-INSERT INTO `prestataire` (`id`, `nom`) VALUES
-(1, 'Inconnu'),
-(2, 'CNAM'),
-(3, 'GRETA'),
-(4, 'AFPA'),
-(5, 'Privé'),
-(12, 'Service public');
 
 -- --------------------------------------------------------
 
@@ -175,17 +141,6 @@ CREATE TABLE `salle` (
 --
 -- Déchargement des données de la table `salle`
 --
-
-INSERT INTO `salle` (`id`, `nom`) VALUES
-(1, 'Salle Majorette'),
-(2, 'Salle Grüber'),
-(3, 'Salle Lamour'),
-(4, 'Salle Longwy'),
-(5, 'Salle Daum'),
-(6, 'Salle Gallé'),
-(7, 'Salle Corbin'),
-(8, 'Salle Baccarat'),
-(13, 'Salle multimedia');
 
 -- --------------------------------------------------------
 
@@ -205,15 +160,6 @@ CREATE TABLE `session` (
 --
 -- Déchargement des données de la table `session`
 --
-
-INSERT INTO `session` (`id`, `formation_id`, `duree_id`, `salle_id`, `intervenant_id`, `prestataire_id`) VALUES
-(1, 20, 1, 5, 2, 3),
-(3, 22, 1, 4, 1, 2),
-(4, 21, 1, 3, 3, 5),
-(5, 22, 2, 1, 1, 3),
-(10, 20, 2, 3, 1, 3),
-(15, 21, 1, 3, 3, 5),
-(17, 29, 8, 2, 2, 12);
 
 --
 -- Index pour les tables déchargées
